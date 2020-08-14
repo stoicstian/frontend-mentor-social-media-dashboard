@@ -1,10 +1,36 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}" />
     <title>Document</title>
   </head>
-  <body></body>
-  <h2>Saludos desde la carpeta templates general</h2>
+  <body>
+    <div class="wrapper">
+      <h1></h1>
+      <p></p>
+    </div>
+    <section>
+      <div class="wrapper">
+        <article class="card">
+          <p>
+            <img
+              src="{% static 'img/icon-facebook.svg' %}"
+              alt="imagen facebook"
+            />
+            @stoicstian
+          </p>
+          <p>
+            <span>1987</span>
+            <span>Followers</span>
+          </p>
+          <p>
+            12 Today
+          </p>
+        </article>
+      </div>
+    </section>
+  </body>
 </html>

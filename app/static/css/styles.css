@@ -1,0 +1,23 @@
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+}
+
+.wrapper {
+  padding: 0px 30px;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #f0f3fa;
+  border-radius: 5px;
+}
+
+.card::before {
+  content: "";
+  height: 4px;
+  display: block;
+  background: #178ff2;
+}
+
+/*# sourceMappingURL=styles.css.map */

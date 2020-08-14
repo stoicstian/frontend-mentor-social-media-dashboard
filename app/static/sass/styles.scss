@@ -1,0 +1,27 @@
+// Variables
+$facebook-color: #178ff2;
+$twitter-color: #1da1f2;
+$instagram-color-orange: #fdc468;
+$instagram-color-purple: #df4996;
+$youtube-color: #c4032a;
+
+body {
+  margin: 0;
+}
+
+.wrapper {
+  padding: 0px 30px;
+}
+
+.card {
+  overflow: hidden;
+  background-color: #f0f3fa;
+  border-radius: 5px;
+}
+
+.card::before {
+  content: "";
+  height: 4px;
+  display: block;
+  background: $facebook-color;
+}
