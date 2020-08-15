@@ -1,20 +1,10 @@
-// Colores primarios
-$lime-green: #1db489;
-$bright-red: #dc414c;
-$facebook-color: #178ff2;
-$twitter-color: #1da1f2;
-$instagram-color-orange: #fdc468;
-$instagram-color-purple: #df4996;
-$youtube-color: #c4032a;
-
-// Colores tema claro
-$pale-blue: #f5f7ff;
-$light-grayish-blue: #f0f2fa;
-$dark-grayish-blue: #63687e;
-$dark-blue: #1e202a;
+@use './fonts';
+@use './colors';
 
 body {
   margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
 }
 
 .wrapper {
@@ -23,13 +13,13 @@ body {
 
 .card {
   overflow: hidden;
-  background-color: $pale-blue;
+  background-color: colors.$pale-blue;
   border-radius: 5px;
   text-align: center;
 }
 
 .card--title {
-  color: $dark-blue;
+  color: colors.$dark-blue;
   font-size: 0.9em;
   display: flex;
   align-items: center;
@@ -44,31 +34,27 @@ body {
   content: "";
   height: 4px;
   display: block;
-  background: $facebook-color;
+  background: colors.$facebook-color;
 }
 
-.card--followers--number {
-  color: $dark-blue;
+.card--info--number {
+  color: colors.$dark-blue;
   font-size: 2.5em;
   font-weight: 700;
 }
 
-.card--followers--title {
-  color: $dark-grayish-blue;
+.card--info--title {
+  color: colors.$dark-grayish-blue;
   font-size: 0.8em;
   display: block;
   text-transform: uppercase;
   letter-spacing: 5px;
 }
 
-.card--today {
-  color: $lime-green;
+.card--info-actuality {
+  color: colors.$lime-green;
   font-size: 0.7em;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.card--today img {
-  margin-right: 4px;
 }
