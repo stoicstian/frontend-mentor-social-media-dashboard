@@ -1,0 +1,46 @@
+@use './colors';
+@use './fonts';
+
+.card {
+  overflow: hidden;
+  background-color: colors.$pale-blue;
+  border-radius: 5px;
+  text-align: center;
+
+  &::before {
+    content: "";
+    height: 4px;
+    display: block;
+    background: colors.$facebook-color;
+  }
+
+  &--title {
+    color: colors.$dark-blue;
+    font-size: 0.9em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &--info--number {
+    color: colors.$dark-blue;
+    font-size: 2.5em;
+    font-weight: 700;
+  }
+
+  &--info--title {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.8em;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+  }
+
+  &--info-actuality {
+    color: colors.$lime-green;
+    font-size: 0.7em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
