@@ -15,26 +15,28 @@
     <section>
       <div class="wrapper">
         <article class="card">
-          <p class="card--user">
+          <header class="card__header">
             <img
-              class="card--icon--social"
+              class="card__icon-media"
               src="{% static 'img/icon-facebook.svg' %}"
               alt="imagen facebook"
             />
-            @stoicstian
-          </p>
-          <p class="card--info">
-            <span class="card--info--number">1987</span>
-            <span class="card--info--title">Followers</span>
-          </p>
-          <p class="card--info-actuality">
+            <p class="card__title">
+              @stoicstian
+            </p>
+          </header>
+          <main class="card__main">
+            <span class="card__number-total">1987</span>
+            <span class="card__description">Followers</span>
+          </main>
+          <footer class="card__footer">
             <img
-              class="card--icon--direction"
+              class="card__icon-direction"
               src="{% static 'img/icon-up.svg' %}"
-              alt=""
+              alt="icon-up"
             />
-            12 Today
-          </p>
+            <p class="card__number-today">12 Today</p>
+          </footer>
         </article>
       </div>
     </section>

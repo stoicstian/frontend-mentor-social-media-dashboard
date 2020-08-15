@@ -1,6 +1,7 @@
 @use './colors';
 @use './fonts';
 
+// Social Media Card
 .card {
   overflow: hidden;
   background-color: colors.$pale-blue;
@@ -14,33 +15,53 @@
     background: colors.$facebook-color;
   }
 
-  &--title {
-    color: colors.$dark-blue;
-    font-size: 0.9em;
+  // HEAD
+  &__header {
     display: flex;
     align-items: center;
     justify-content: center;
   }
 
-  &--info--number {
+  &__icon-media {
+    margin-right: 6px;
+  }
+
+  &__title {
+    color: colors.$dark-blue;
+    font-size: 0.9em;
+  }
+  // MAIN
+  &__main {
+    padding-bottom: 10px;
+  }
+
+  &__number-total {
     color: colors.$dark-blue;
     font-size: 2.5em;
     font-weight: 700;
   }
 
-  &--info--title {
+  &__description {
     color: colors.$dark-grayish-blue;
     font-size: 0.8em;
+    font-weight: 500;
     display: block;
     text-transform: uppercase;
     letter-spacing: 5px;
   }
-
-  &--info-actuality {
-    color: colors.$lime-green;
-    font-size: 0.7em;
+  // FOOTER
+  &__footer {
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  &__icon-direction {
+    margin-right: 6px;
+  }
+
+  &__number-today {
+    color: colors.$lime-green;
+    font-size: 0.7em;
   }
 }
