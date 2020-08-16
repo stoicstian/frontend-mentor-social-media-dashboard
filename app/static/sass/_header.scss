@@ -1,0 +1,30 @@
+@use './colors';
+@use './fonts';
+@use './config';
+
+.header {
+  @extend %config-wrapper;
+  padding-top: 30px;
+  background-color: colors.$pale-blue;
+  border-radius: 0px 0px 20px 20px;
+
+  &::after {
+    content: "";
+    height: 150px;
+    display: block;
+  }
+
+  &__title {
+    color: colors.$dark-blue;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 5px 0px;
+  }
+
+  &__subtitle {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.9em;
+    font-weight: 600;
+    margin: 5px 0px;
+  }
+}
