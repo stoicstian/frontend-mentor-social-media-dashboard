@@ -7,12 +7,37 @@
   background-color: colors.$light-grayish-blue;
   border-radius: 8px;
   text-align: center;
+  position: relative;
 
   &::before {
     content: "";
     height: 4px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
     display: block;
+  }
+
+  // MODIFICADORES
+  &__facebook::before {
     background: colors.$facebook-color;
+  }
+
+  &__twitter::before {
+    background: colors.$twitter-color;
+  }
+
+  &__instagram::before {
+    background-image: linear-gradient(
+      90deg,
+      colors.$instagram-color-orange,
+      colors.$instagram-color-purple
+    );
+  }
+
+  &__youtube::before {
+    background: colors.$youtube-color;
   }
 
   // HEAD
@@ -21,6 +46,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px 0px;
   }
 
   &__icon-media {
@@ -33,7 +59,7 @@
   }
   // MAIN
   &__main {
-    padding-bottom: 10px;
+    padding: 10px 0px;
   }
 
   &__number-total {
@@ -52,7 +78,7 @@
   }
   // FOOTER
   &__footer {
-    margin-bottom: 10px;
+    padding: 10px 0px 10px 0px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -63,7 +89,14 @@
   }
 
   &__number-today {
-    color: colors.$lime-green;
     font-size: 0.7em;
+
+    &__green {
+      color: colors.$lime-green;
+    }
+
+    &__red {
+      color: colors.$bright-red;
+    }
   }
 }

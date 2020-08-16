@@ -37,7 +37,15 @@ body {
   color: #63687e;
   font-size: 0.9em;
   font-weight: 600;
+  padding-bottom: 30px;
   margin: 5px 0px;
+  border-bottom: 2px solid #63687e;
+}
+.header__text-switcher {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #63687e;
+  margin-top: 15px;
 }
 
 .grid {
@@ -55,18 +63,35 @@ body {
   background-color: #f0f2fa;
   border-radius: 8px;
   text-align: center;
+  position: relative;
 }
 .card::before {
   content: "";
   height: 4px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
   display: block;
-  background: #178ff2;
+}
+.card__facebook::before {
+  background: #1877f2;
+}
+.card__twitter::before {
+  background: #1da1f2;
+}
+.card__instagram::before {
+  background-image: linear-gradient(90deg, #fdc468, #df4996);
+}
+.card__youtube::before {
+  background: #c4032a;
 }
 .card__header {
   margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0px;
 }
 .card__icon-media {
   margin-right: 6px;
@@ -76,7 +101,7 @@ body {
   font-size: 0.9em;
 }
 .card__main {
-  padding-bottom: 10px;
+  padding: 10px 0px;
 }
 .card__number-total {
   color: #1e202a;
@@ -92,7 +117,7 @@ body {
   letter-spacing: 5px;
 }
 .card__footer {
-  margin-bottom: 10px;
+  padding: 10px 0px 10px 0px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -101,8 +126,13 @@ body {
   margin-right: 6px;
 }
 .card__number-today {
-  color: #1db489;
   font-size: 0.7em;
+}
+.card__number-today__green {
+  color: #1db489;
+}
+.card__number-today__red {
+  color: #dc414c;
 }
 
 /*# sourceMappingURL=styles.css.map */
