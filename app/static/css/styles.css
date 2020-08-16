@@ -1,10 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
   font-family: "Inter", sans-serif;
 }
 
-.wrapper {
+.grid, .header {
   padding: 0px 30px;
 }
 
@@ -12,10 +17,43 @@ body {
   font-family: "Inter";
   src: url("../fonts/Inter-VariableFont.ttf") format("truetype");
 }
+.header {
+  padding-top: 30px;
+  background-color: #f5f7ff;
+  border-radius: 0px 0px 20px 20px;
+}
+.header::after {
+  content: "";
+  height: 150px;
+  display: block;
+}
+.header__title {
+  color: #1e202a;
+  font-size: 1.5em;
+  font-weight: 700;
+  margin: 5px 0px;
+}
+.header__subtitle {
+  color: #63687e;
+  font-size: 0.9em;
+  font-weight: 600;
+  margin: 5px 0px;
+}
+
+.grid {
+  margin: 30px 0px;
+  display: grid;
+  grid-row-gap: 25px;
+}
+
+.top-cards {
+  margin-top: -100px;
+}
+
 .card {
   overflow: hidden;
-  background-color: #f5f7ff;
-  border-radius: 5px;
+  background-color: #f0f2fa;
+  border-radius: 8px;
   text-align: center;
 }
 .card::before {
@@ -25,6 +63,7 @@ body {
   background: #178ff2;
 }
 .card__header {
+  margin-top: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -33,7 +72,7 @@ body {
   margin-right: 6px;
 }
 .card__title {
-  color: #1e202a;
+  color: #63687e;
   font-size: 0.9em;
 }
 .card__main {
@@ -53,6 +92,7 @@ body {
   letter-spacing: 5px;
 }
 .card__footer {
+  margin-bottom: 10px;
   display: flex;
   align-items: center;
   justify-content: center;

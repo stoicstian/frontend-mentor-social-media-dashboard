@@ -4,8 +4,8 @@
 // Social Media Card
 .card {
   overflow: hidden;
-  background-color: colors.$pale-blue;
-  border-radius: 5px;
+  background-color: colors.$light-grayish-blue;
+  border-radius: 8px;
   text-align: center;
 
   &::before {
@@ -17,6 +17,7 @@
 
   // HEAD
   &__header {
+    margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -27,7 +28,7 @@
   }
 
   &__title {
-    color: colors.$dark-blue;
+    color: colors.$dark-grayish-blue;
     font-size: 0.9em;
   }
   // MAIN
@@ -51,6 +52,7 @@
   }
   // FOOTER
   &__footer {
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
