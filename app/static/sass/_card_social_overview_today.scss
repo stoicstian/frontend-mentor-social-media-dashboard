@@ -1,1 +1,25 @@
 @use './colors';
+
+.card-overview {
+  background-color: colors.$light-grayish-blue;
+  border-radius: 8px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  &__text-views {
+    border: 1px solid red;
+  }
+
+  &__icon-media {
+    border: 1px solid blue;
+    text-align: right;
+  }
+
+  &__number-views {
+    border: 1px solid green;
+  }
+
+  &__percentage-views {
+    border: 1px solid yellow;
+  }
+}
