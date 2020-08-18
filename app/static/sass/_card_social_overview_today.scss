@@ -32,8 +32,15 @@
     align-items: flex-end;
     justify-content: flex-end;
     font-size: 0.8em;
-    color: colors.$lime-green;
     font-weight: 500;
+
+    &_green {
+      color: colors.$lime-green;
+    }
+
+    &_red {
+      color: colors.$bright-red;
+    }
 
     span {
       display: flex;

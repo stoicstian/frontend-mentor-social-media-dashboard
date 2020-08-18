@@ -164,8 +164,13 @@ body {
   align-items: flex-end;
   justify-content: flex-end;
   font-size: 0.8em;
-  color: #1db489;
   font-weight: 500;
+}
+.card-overview__percentage-views_green {
+  color: #1db489;
+}
+.card-overview__percentage-views_red {
+  color: #dc414c;
 }
 .card-overview__percentage-views span {
   display: flex;
@@ -175,8 +180,9 @@ body {
   margin-right: 5px;
 }
 
-.top-cards {
-  display: none;
+.cards-low__title {
+  font-size: 1.2em;
+  color: #63687e;
 }
 
 /*# sourceMappingURL=styles.css.map */

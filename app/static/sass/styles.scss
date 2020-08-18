@@ -2,7 +2,6 @@
 @use './fonts';
 @use './colors';
 @use './header';
-@use './grid';
 @use './top-cards';
 @use './card_social_media';
 @use './card_social_overview_today';
@@ -10,10 +9,14 @@
 .top-cards {
   @extend %config-wrapper;
   @extend %section-grid;
-  display: none;
 }
 
 .cards-low {
   @extend %config-wrapper;
   @extend %section-grid;
+
+  &__title {
+    font-size: 1.2em;
+    color: colors.$dark-grayish-blue;
+  }
 }
