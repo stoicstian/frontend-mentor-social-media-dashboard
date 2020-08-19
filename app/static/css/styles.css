@@ -1,6 +1,11 @@
+@font-face {
+  font-family: "Inter";
+  src: url("../fonts/Inter-VariableFont.ttf") format("truetype");
+}
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -9,38 +14,28 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.top-cards, .cards-low, .header {
-  padding: 0px 30px;
-}
-
-.top-cards, .cards-low {
-  padding: 0px 30px;
-  margin: 30px 0px;
+.top-cards {
+  padding: 0px 40px;
   display: grid;
-  grid-row-gap: 25px;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
+  column-gap: 25px;
 }
-
-@font-face {
-  font-family: "Inter";
-  src: url("../fonts/Inter-VariableFont.ttf") format("truetype");
+.top-cards__header {
+  border: 1px solid red;
 }
-.header {
-  padding-top: 30px;
-  background-color: #f5f7ff;
-  border-radius: 0px 0px 20px 20px;
-}
-.header::after {
+.top-cards__header::after {
   content: "";
   height: 150px;
   display: block;
 }
-.header__title {
+.top-cards__title {
   color: #1e202a;
   font-size: 1.5em;
   font-weight: 700;
   margin: 5px 0px;
 }
-.header__subtitle {
+.top-cards__subtitle {
   color: #63687e;
   font-size: 0.9em;
   font-weight: 600;
@@ -48,15 +43,11 @@ body {
   margin: 5px 0px;
   border-bottom: 2px solid #63687e;
 }
-.header__text-switcher {
+.top-cards__text-switcher {
   font-size: 0.9em;
   font-weight: 600;
   color: #63687e;
   margin-top: 15px;
-}
-
-.top-cards {
-  margin-top: -100px;
 }
 
 .card {
@@ -178,52 +169,6 @@ body {
 }
 .card-overview__percentage-views span img {
   margin-right: 5px;
-}
-
-.cards-low__title {
-  font-size: 1.2em;
-  color: #63687e;
-}
-
-@media screen and (min-width: 480px) {
-  .top-cards {
-    display: grid;
-    padding: 0px 30px;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 25px;
-    column-gap: 25px;
-  }
-
-  .cards-low main {
-    display: grid;
-    padding: 0px 30px;
-    grid-template-columns: 1fr 1fr;
-    row-gap: 25px;
-    column-gap: 25px;
-    padding: 0;
-  }
-}
-@media screen and (min-width: 800px) {
-  body {
-    border: 2px solid blue;
-  }
-
-  .top-cards {
-    display: grid;
-    padding: 0px 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 25px;
-    column-gap: 25px;
-  }
-
-  .cards-low main {
-    display: grid;
-    padding: 0px 30px;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 25px;
-    column-gap: 25px;
-    padding: 0;
-  }
 }
 
 /*# sourceMappingURL=styles.css.map */

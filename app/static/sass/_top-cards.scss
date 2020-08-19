@@ -1,3 +1,41 @@
+@use './colors';
+@use './config';
+
 .top-cards {
-  margin-top: -100px;
+  // @extend %config-wrapper;
+  // @extend %section-grid;
+  @include config.config-wrapper(0px 40px);
+  @include config.section-grid(1fr);
+  // margin-top: -100px;
+
+  &__header {
+    border: 1px solid red;
+    &::after {
+      content: "";
+      height: 150px;
+      display: block;
+    }
+  }
+
+  &__title {
+    color: colors.$dark-blue;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 5px 0px;
+  }
+
+  &__subtitle {
+    color: colors.$dark-grayish-blue;
+    font-size: 0.9em;
+    font-weight: 600;
+    padding-bottom: 30px;
+    margin: 5px 0px;
+    border-bottom: 2px solid colors.$dark-grayish-blue;
+  }
+  &__text-switcher {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: colors.$dark-grayish-blue;
+    margin-top: 15px;
+  }
 }

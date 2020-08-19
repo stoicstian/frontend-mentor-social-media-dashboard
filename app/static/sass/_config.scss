@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0;
-  // box-sizing: content-box;
+  box-sizing: border-box;
 }
 body {
   margin: 0;
@@ -20,10 +20,13 @@ body {
   grid-row-gap: 25px;
 }
 
-@mixin section-grid($frs) {
+@mixin config-wrapper($padding) {
+  padding: $padding;
+}
+
+@mixin section-grid($fractions) {
   display: grid;
-  padding: 0px 30px;
-  grid-template-columns: $frs;
+  grid-template-columns: $fractions;
   row-gap: 25px;
   column-gap: 25px;
 }
