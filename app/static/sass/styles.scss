@@ -22,15 +22,26 @@
 }
 
 @media screen and (min-width: 480px) {
-  body {
-    border: 2px solid red;
-  }
   .top-cards {
-    @include config.section-grid;
+    @include config.section-grid(1fr 1fr);
   }
 
-  .cards-low {
-    @include config.section-grid;
-    padding: 0px 30px;
+  .cards-low main {
+    @include config.section-grid(1fr 1fr);
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  body {
+    border: 2px solid blue;
+  }
+  .top-cards {
+    @include config.section-grid(1fr 1fr 1fr 1fr);
+  }
+
+  .cards-low main {
+    @include config.section-grid(1fr 1fr 1fr 1fr);
+    padding: 0;
   }
 }

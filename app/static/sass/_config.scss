@@ -20,10 +20,10 @@ body {
   grid-row-gap: 25px;
 }
 
-@mixin section-grid {
+@mixin section-grid($frs) {
   display: grid;
   padding: 0px 30px;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  row-gap: 25;
+  grid-template-columns: $frs;
+  row-gap: 25px;
   column-gap: 25px;
 }

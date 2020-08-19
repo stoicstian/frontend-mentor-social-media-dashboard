@@ -186,25 +186,43 @@ body {
 }
 
 @media screen and (min-width: 480px) {
+  .top-cards {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+
+  .cards-low main {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+    padding: 0;
+  }
+}
+@media screen and (min-width: 800px) {
   body {
-    border: 2px solid red;
+    border: 2px solid blue;
   }
 
   .top-cards {
     display: grid;
     padding: 0px 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 25;
+    row-gap: 25px;
     column-gap: 25px;
   }
 
-  .cards-low {
+  .cards-low main {
     display: grid;
     padding: 0px 30px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    row-gap: 25;
+    row-gap: 25px;
     column-gap: 25px;
-    padding: 0px 30px;
+    padding: 0;
   }
 }
 
