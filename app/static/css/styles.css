@@ -185,4 +185,27 @@ body {
   color: #63687e;
 }
 
+@media screen and (min-width: 480px) {
+  body {
+    border: 2px solid red;
+  }
+
+  .top-cards {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25;
+    column-gap: 25px;
+  }
+
+  .cards-low {
+    display: grid;
+    padding: 0px 30px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25;
+    column-gap: 25px;
+    padding: 0px 30px;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */

@@ -19,3 +19,11 @@ body {
   display: grid;
   grid-row-gap: 25px;
 }
+
+@mixin section-grid {
+  display: grid;
+  padding: 0px 30px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  row-gap: 25;
+  column-gap: 25px;
+}

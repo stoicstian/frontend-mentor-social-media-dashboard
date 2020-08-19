@@ -20,3 +20,17 @@
     color: colors.$dark-grayish-blue;
   }
 }
+
+@media screen and (min-width: 480px) {
+  body {
+    border: 2px solid red;
+  }
+  .top-cards {
+    @include config.section-grid;
+  }
+
+  .cards-low {
+    @include config.section-grid;
+    padding: 0px 30px;
+  }
+}
