@@ -4,15 +4,16 @@
 .top-cards {
   // @extend %config-wrapper;
   // @extend %section-grid;
-  @include config.config-wrapper(0px 40px);
-  @include config.section-grid(1fr);
-  // margin-top: -100px;
 
   &__header {
-    border: 1px solid red;
+    @include config.config-wrapper(0px 40px);
+    background-color: colors.$pale-blue;
+    padding-top: 30px;
+    border-radius: 0px 0px 20px 20px;
+
     &::after {
       content: "";
-      height: 150px;
+      height: 100px;
       display: block;
     }
   }
@@ -37,5 +38,11 @@
     font-weight: 600;
     color: colors.$dark-grayish-blue;
     margin-top: 15px;
+  }
+
+  &__content {
+    @include config.config-wrapper(0px 40px);
+    @include config.section-grid(1fr);
+    margin-top: -70px;
   }
 }

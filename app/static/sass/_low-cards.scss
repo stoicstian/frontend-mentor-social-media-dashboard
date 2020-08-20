@@ -1,0 +1,19 @@
+@use './colors';
+@use './config';
+
+.low-cards {
+  @include config.config-wrapper(0px 40px);
+
+  &__header {
+    padding: 20px 0px;
+  }
+
+  &__title {
+    font-size: 1.2em;
+    color: colors.$dark-grayish-blue;
+  }
+
+  &__content {
+    @include config.section-grid(1fr);
+  }
+}

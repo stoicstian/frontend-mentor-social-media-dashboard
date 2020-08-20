@@ -14,19 +14,15 @@ body {
   font-family: "Inter", sans-serif;
 }
 
-.top-cards {
-  padding: 0px 40px;
-  display: grid;
-  grid-template-columns: 1fr;
-  row-gap: 25px;
-  column-gap: 25px;
-}
 .top-cards__header {
-  border: 1px solid red;
+  padding: 0px 40px;
+  background-color: #f5f7ff;
+  padding-top: 30px;
+  border-radius: 0px 0px 20px 20px;
 }
 .top-cards__header::after {
   content: "";
-  height: 150px;
+  height: 100px;
   display: block;
 }
 .top-cards__title {
@@ -48,6 +44,14 @@ body {
   font-weight: 600;
   color: #63687e;
   margin-top: 15px;
+}
+.top-cards__content {
+  padding: 0px 40px;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
+  column-gap: 25px;
+  margin-top: -70px;
 }
 
 .card {
@@ -125,6 +129,23 @@ body {
 }
 .card__number-today__red {
   color: #dc414c;
+}
+
+.low-cards {
+  padding: 0px 40px;
+}
+.low-cards__header {
+  padding: 20px 0px;
+}
+.low-cards__title {
+  font-size: 1.2em;
+  color: #63687e;
+}
+.low-cards__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 25px;
+  column-gap: 25px;
 }
 
 .card-overview {

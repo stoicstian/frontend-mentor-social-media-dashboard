@@ -3,18 +3,8 @@
 @use './config';
 @use './top-cards';
 @use './card_social_media';
+@use './low-cards';
 @use './card_social_overview_today';
-
-// .cards-low {
-//   display: none;
-//   @extend %config-wrapper;
-//   @extend %section-grid;
-
-//   &__title {
-//     font-size: 1.2em;
-//     color: colors.$dark-grayish-blue;
-//   }
-// }
 
 // @media screen and (min-width: 480px) {
 //   .top-cards {
