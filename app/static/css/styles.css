@@ -207,5 +207,20 @@ body {
     column-gap: 25px;
   }
 }
+@media screen and (min-width: 800px) {
+  .top-cards__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+
+  .low-cards__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    row-gap: 25px;
+    column-gap: 25px;
+  }
+}
 
 /*# sourceMappingURL=styles.css.map */
