@@ -1,3 +1,5 @@
+@use './config';
+
 //Colores primarios
 $lime-green: #1db489;
 $bright-red: #dc414c;
@@ -7,8 +9,9 @@ $instagram-color-orange: #fdc468;
 $instagram-color-purple: #df4996;
 $youtube-color: #c4032a;
 
-// Colores tema claro
-$pale-blue: #f5f7ff;
-$light-grayish-blue: #f0f2fa;
-$dark-grayish-blue: #63687e;
-$dark-blue: #1e202a;
+// Colores tema oscuro
+$pale-blue: #1e202a;
+$light-grayish-blue: #1f212e;
+$dark-grayish-blue: #8b97c6;
+// $dark-grayish-blue: #252a41
+$dark-blue: #fff;

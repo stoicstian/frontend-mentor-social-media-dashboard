@@ -16,7 +16,7 @@ body {
 
 .top-cards__header {
   padding: 0px 40px;
-  background-color: #f5f7ff;
+  background-color: #1e202a;
   padding-top: 30px;
   border-radius: 0px 0px 20px 20px;
 }
@@ -26,23 +26,23 @@ body {
   display: block;
 }
 .top-cards__title {
-  color: #1e202a;
+  color: #fff;
   font-size: 1.5em;
   font-weight: 700;
   margin: 5px 0px;
 }
 .top-cards__subtitle {
-  color: #63687e;
+  color: #8b97c6;
   font-size: 0.9em;
   font-weight: 600;
   padding-bottom: 30px;
   margin: 5px 0px;
-  border-bottom: 2px solid #63687e;
+  border-bottom: 2px solid #8b97c6;
 }
 .top-cards__text-switcher {
   font-size: 0.9em;
   font-weight: 600;
-  color: #63687e;
+  color: #8b97c6;
   margin-top: 15px;
 }
 .top-cards__content {
@@ -56,7 +56,7 @@ body {
 
 .card {
   overflow: hidden;
-  background-color: #f0f2fa;
+  background-color: #1f212e;
   border-radius: 8px;
   text-align: center;
   position: relative;
@@ -93,19 +93,19 @@ body {
   margin-right: 6px;
 }
 .card__title {
-  color: #63687e;
+  color: #8b97c6;
   font-size: 0.9em;
 }
 .card__main {
   padding: 10px 0px;
 }
 .card__number-total {
-  color: #1e202a;
+  color: #fff;
   font-size: 2.5em;
   font-weight: 700;
 }
 .card__description {
-  color: #63687e;
+  color: #8b97c6;
   font-size: 0.8em;
   font-weight: 500;
   display: block;
@@ -139,7 +139,7 @@ body {
 }
 .low-cards__title {
   font-size: 1.2em;
-  color: #63687e;
+  color: #8b97c6;
 }
 .low-cards__content {
   display: grid;
@@ -149,7 +149,7 @@ body {
 }
 
 .card-overview {
-  background-color: #f0f2fa;
+  background-color: #1f212e;
   border-radius: 8px;
   padding: 1.5em;
   display: grid;
@@ -160,7 +160,7 @@ body {
 .card-overview__text-views {
   font-weight: 700;
   font-size: 0.7em;
-  color: #63687e;
+  color: #8b97c6;
 }
 .card-overview__icon-media {
   text-align: right;
@@ -169,7 +169,7 @@ body {
   font-weight: 700;
   font-size: 1.6em;
   line-height: 0.9em;
-  color: #1e202a;
+  color: #fff;
 }
 .card-overview__percentage-views {
   display: flex;
@@ -220,6 +220,11 @@ body {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     row-gap: 25px;
     column-gap: 25px;
+  }
+}
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #000;
   }
 }
 

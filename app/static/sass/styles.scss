@@ -26,8 +26,8 @@
   }
 }
 
-// @media (prefers-color-scheme: dark) {
-//   body {
-//     background: #000;
-//   }
-// }
+@media (prefers-color-scheme: config.$theme-color) {
+  body {
+    background: #000;
+  }
+}
