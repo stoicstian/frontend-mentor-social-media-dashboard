@@ -2,7 +2,7 @@
 @use './config';
 
 .low-cards {
-  @include config.config-wrapper(0px 40px);
+  @include config.config-wrapper(0px 40px 30px 40px);
 
   &__header {
     padding: 20px 0px;
