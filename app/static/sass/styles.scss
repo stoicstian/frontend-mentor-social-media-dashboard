@@ -6,16 +6,15 @@
 @use './low-cards';
 @use './card_social_overview_today';
 
-// @media screen and (min-width: 480px) {
-//   .top-cards {
-//     @include config.section-grid(1fr 1fr);
-//   }
+@media screen and (min-width: 480px) {
+  .top-cards__content {
+    @include config.section-grid(1fr 1fr);
+  }
 
-//   .cards-low main {
-//     @include config.section-grid(1fr 1fr);
-//     padding: 0;
-//   }
-// }
+  .low-cards__content {
+    @include config.section-grid(1fr 1fr);
+  }
+}
 
 // @media screen and (min-width: 800px) {
 //   .top-cards {
