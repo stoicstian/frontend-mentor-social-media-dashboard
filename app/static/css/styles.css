@@ -39,12 +39,6 @@ body {
   margin: 5px 0px;
   border-bottom: 2px solid #8b97c6;
 }
-.top-cards__text-switcher {
-  font-size: 0.9em;
-  font-weight: 600;
-  color: #8b97c6;
-  margin-top: 15px;
-}
 .top-cards__content {
   padding: 0px 40px;
   display: grid;
@@ -52,6 +46,19 @@ body {
   row-gap: 25px;
   column-gap: 25px;
   margin-top: -70px;
+}
+
+.switcher {
+  border: 1px solid red;
+}
+.switcher__text {
+  font-size: 0.9em;
+  font-weight: 600;
+  color: #8b97c6;
+  margin-top: 15px;
+}
+.switcher__widget {
+  height: 50px;
 }
 
 .card {

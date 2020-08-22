@@ -33,12 +33,6 @@
     margin: 5px 0px;
     border-bottom: 2px solid colors.$dark-grayish-blue;
   }
-  &__text-switcher {
-    font-size: 0.9em;
-    font-weight: 600;
-    color: colors.$dark-grayish-blue;
-    margin-top: 15px;
-  }
 
   &__content {
     @include config.config-wrapper(0px 40px);

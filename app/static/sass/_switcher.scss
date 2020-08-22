@@ -1,0 +1,17 @@
+@use './colors';
+@use './config';
+
+.switcher {
+  border: 1px solid red;
+
+  &__text {
+    font-size: 0.9em;
+    font-weight: 600;
+    color: colors.$dark-grayish-blue;
+    margin-top: 15px;
+  }
+
+  &__widget {
+    height: 50px;
+  }
+}
