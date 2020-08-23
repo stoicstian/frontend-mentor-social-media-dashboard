@@ -4,28 +4,44 @@
 .switcher {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 
   &__text {
     font-size: 0.9em;
     font-weight: 600;
     color: colors.$dark-grayish-blue;
-    margin-top: 15px;
   }
 
-  &__label {
+  &__widget {
     background-image: linear-gradient(
       90deg,
       colors.$toggle-blue,
       colors.$toggle-green
     );
-    height: 30px;
-    width: 60px;
+    height: 25px;
+    width: 50px;
     border-radius: 15px;
+    box-sizing: border-box;
+    cursor: pointer;
     display: block;
-    border: 1px solid red;
+    padding: 2px;
+    user-select: none;
+
+    &::before {
+      content: "";
+      background: colors.$pale-blue;
+      display: block;
+      height: 21px;
+      width: 21px;
+      border-radius: 100%;
+    }
   }
 
-  &__widget {
+  &__checkbox {
     display: none;
+
+    &:checked ~ .switcher__widget::before {
+      transform: translateX(25px);
+    }
   }
 }

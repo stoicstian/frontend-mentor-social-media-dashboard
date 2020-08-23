@@ -51,23 +51,37 @@ body {
 .switcher {
   display: flex;
   justify-content: space-between;
+  margin-top: 20px;
 }
 .switcher__text {
   font-size: 0.9em;
   font-weight: 600;
   color: #8b97c6;
-  margin-top: 15px;
-}
-.switcher__label {
-  background-image: linear-gradient(90deg, #378fe6, #3eda82);
-  height: 30px;
-  width: 60px;
-  border-radius: 15px;
-  display: block;
-  border: 1px solid red;
 }
 .switcher__widget {
+  background-image: linear-gradient(90deg, #378fe6, #3eda82);
+  height: 25px;
+  width: 50px;
+  border-radius: 15px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: block;
+  padding: 2px;
+  user-select: none;
+}
+.switcher__widget::before {
+  content: "";
+  background: #1e202a;
+  display: block;
+  height: 21px;
+  width: 21px;
+  border-radius: 100%;
+}
+.switcher__checkbox {
   display: none;
+}
+.switcher__checkbox:checked ~ .switcher__widget::before {
+  transform: translateX(25px);
 }
 
 .card {
